@@ -73,9 +73,24 @@ module.exports = {
 				800: '800ms',
 				900: '900ms',
 			},
-			fontFamily: {},
-			fontSize: {},
-			colors: {},
+			maxWidth: {
+				container: '1200px',
+				620: '620px',
+			},
+			fontFamily: {
+				poppins: [
+					'c_poppins',
+					'sans-serif',
+				]
+			},
+			fontSize: {
+				base: ['16px', '24px'],
+				'5xl': ['48px', '60px'],
+				'6xl': ['60px', '74px']
+			},
+			colors: {
+				yellow: '#FFD723',
+			},
 			zIndex: {
 				max: 1000000,
 			},
