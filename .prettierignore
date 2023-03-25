@@ -1,0 +1,5 @@
+node_modules
+/src/js/libs/
+/dist/
+/src/fonts/
+/src/img/

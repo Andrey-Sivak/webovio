@@ -1,0 +1,47 @@
+/.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# PHPStorm
+.idea/*
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore log files and databases
+*.sql
+*.sqlite
+*.DS_Store
+
+# ignore node dependency directories
+/node_modules
+package-lock.json
+.eslintcache
+/dist/js/*.txt
+/dist/css/*.css
+!/dist/css/*.min.css
