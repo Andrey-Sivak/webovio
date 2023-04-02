@@ -4,3 +4,8 @@
 
 /** TODO: uncomment string bellow after using terminal command: "gulp make:fonts" */
 @import 'fonts';
+@import "libs/swiper-slider";
+
+.slider > .swiper-wrapper {
+  transition-timing-function : linear;
+}

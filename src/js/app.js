@@ -2,7 +2,10 @@
 
 import { Common } from './modules/Common.js';
 import * as flsFunctions from './modules/functions.js';
+import { Slider } from './Slider.js';
 
 flsFunctions.isWebp();
 
-window.adaptyCommon = new Common();
+window.webovioCommon = new Common();
+
+new Slider('.slider');
