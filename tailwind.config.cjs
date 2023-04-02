@@ -11,6 +11,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			screens: {
+				big: '992px'
+			},
 			spacing: {
 				0.75: '0.1875rem',
 				2.75: '0.6875rem',
@@ -74,7 +77,7 @@ module.exports = {
 				900: '900ms',
 			},
 			maxWidth: {
-				container: '1200px',
+				container: '1280px',
 				620: '620px',
 			},
 			fontFamily: {
@@ -87,6 +90,9 @@ module.exports = {
 				base: ['16px', '24px'],
 				'5xl': ['48px', '60px'],
 				'6xl': ['60px', '74px']
+			},
+			boxShadow: {
+				huge: '50px 50px 100px rgba(0, 0, 0, 0.145947)'
 			},
 			colors: {
 				yellow: '#FFD723',
