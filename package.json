@@ -1,7 +1,7 @@
 {
-	"name": "start-template",
-	"version": "1.0.0",
-	"description": "This template is based on the bundle of gulp and webpack using a lot of different tools to simplify and automate your work with HTML, CSS, JS, Fonts and of course images.",
+	"name": "webovio",
+	"version": "1.1.0",
+	"description": "Portfolio project",
 	"main": "gulpfile.js",
 	"type": "module",
 	"scripts": {
@@ -11,7 +11,11 @@
 		"prepare": "husky install",
 		"lint": "eslint ./src/js --cache && echo \"No linting errors\"",
 		"lint:fix": "eslint ./src/js --fix",
-		"make:fonts": "gulp make:fonts"
+		"make:fonts": "gulp make:fonts",
+		"release": "standard-version",
+		"release:minor": "standard-version --release-as minor",
+		"release:patch": "standard-version --release-as patch",
+		"release:major": "standard-version --release-as major"
 	},
 	"author": "Andrey Sivak",
 	"license": "ISC",
@@ -68,6 +72,7 @@
 		"postcss-import": "^15.1.0",
 		"prettier": "^2.8.4",
 		"sass": "^1.59.3",
+		"standard-version": "^9.5.0",
 		"swiper": "^9.1.1",
 		"tailwindcss": "^3.2.7",
 		"terser-webpack-plugin": "^5.3.7",
