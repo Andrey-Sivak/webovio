@@ -1,0 +1,46 @@
+@layer components {
+  .main-content {
+
+    .article {
+
+      @media (min-width: 992px) {
+
+        &:not(:first-child) {
+
+          &:nth-child(even) {
+
+            & > .article-content {
+              @apply order-2
+              ml-auto;
+            }
+
+            & > .article-perform {
+              @apply order-1;
+
+              .quote-card {
+                @apply -right-10
+              }
+            }
+          }
+
+          &:nth-child(odd) {
+
+            & > .article-perform {
+
+              .quote-card {
+                @apply -left-10
+              }
+            }
+          }
+        }
+      }
+
+      &:last-of-type {
+        @apply big:pb-[200px]
+        pb-20
+        border-b
+        border-black-200/10;
+      }
+    }
+  }
+}
