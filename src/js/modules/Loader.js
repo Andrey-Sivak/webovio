@@ -1,7 +1,7 @@
 'use strict';
 
 export const Loader = class {
-	loaderSelectors = {
+	selectors = {
 		item: '.loader-item',
 		logo: '.loader-logo',
 		root: '.loader',
@@ -16,10 +16,16 @@ export const Loader = class {
 		this.init();
 	}
 
+	calculateLogoScale() {
+		const isMobile = window.matchMedia('(max-width: 650px)').matches;
+
+		return isMobile ? 1.3 : 2;
+	}
+
 	init() {
-		const item = this.loaderSelectors.item;
-		const logo = this.loaderSelectors.logo;
-		const root = this.loaderSelectors.root;
+		const item = this.selectors.item;
+		const logo = this.selectors.logo;
+		const root = this.selectors.root;
 
 		this.timelineLoader
 			.set(item, { yPercent: -100 })
@@ -37,7 +43,7 @@ export const Loader = class {
 			.to(logo, {
 				opacity: 1,
 				duration: 1,
-				scale: 2,
+				scale: this.calculateLogoScale(),
 			})
 			.set(item, {
 				yPercent: -100,
@@ -51,7 +57,7 @@ export const Loader = class {
 				root,
 				{
 					yPercent: -100,
-					duration: 1,
+					duration: 0.5,
 				},
 				'-=0.2',
 			);
