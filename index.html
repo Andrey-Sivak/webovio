@@ -21,81 +21,84 @@
 </header>
 
 <main class="relative z-10 xl:pb-[120px]">
-  <section class="w-full h-screen relative z-10">
+  <section class="w-full h-screen min-h-[400px] relative z-10">
     <img src="./dist/img/first-section-bg.png"
          class="absolute z-10 w-full h-full object-center object-cover"
          loading="lazy"
          alt="Webovio presentation">
     <div class="absolute inset-0 z-20 bg-black/20"></div>
-    <div class="px-4 relative z-30 flex flex-col justify-center h-full">
+    <div class="px-4 relative z-30 flex flex-col short:justify-center justify-end short:pb-0 pb-5 h-full">
       <div class="max-w-container mx-auto w-full">
         <div class="max-w-620 text-white md:mx-0 mx-auto md:text-left text-center">
           <p class="text-base">A place where</p>
-          <h1 class="font-semibold my-6 md:text-6xl text-4xl">A creative agency for redemptive brands</h1>
-          <p class="text-base">Anteelo is a leading strategic design firm that builds powerful digital solutions for
-            startups and enterprises.</p>
+          <h1 class="font-semibold my-6 short-wide:text-6xl text-4xl">
+            A creative agency for redemptive brands
+          </h1>
+          <p class="text-base">
+            Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and
+            enterprises.
+          </p>
           <a href="#"
-             class="text-yellow font-bold text-base underline mt-11.5 inline-block">Get in touch</a>
+             class="text-yellow font-bold text-base short-wide:mt-11.5 mt-5 inline-block animate-link">
+            Get in touch
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="hidden absolute z-20 xl:-translate-y-1/2">
-    <div
-      class="bg-white xl:w-[calc(1280px_+_((100%_-_1280px)_/_2))] shadow-huge xl:rounded-tl-lg xl:rounded-bl-lg ml-auto overflow-hidden">
-      <div class="max-w-container mx-auto pt-15 xl:pl-15 pl-10 xl:pr-0 pr-10 pb-13.5 slider">
+  <aside
+    class="xl:absolute xl:mb-0 big:mb-25 right-0 z-20 xl:-translate-y-1/2 bg-white xl:w-[calc(1280px_+_((100%_-_1280px)_/_2))] shadow-huge xl:rounded-tl-lg xl:rounded-bl-lg ml-auto overflow-hidden">
+    <div class="max-w-[calc(1280px_-_60px)] xl:ml-0 mx-auto pt-15 xl:pl-15 pl-10 xl:pr-0 pr-10 pb-13.5 slider">
 
-        <div class="big:flex big:items-center big:gap-2.5 big:justify-between">
+      <div class="big:flex big:items-center big:gap-2.5 big:justify-between">
 
-          <div class="big:basis-auto big:shrink-0 big:grow-0">
-            <img src="./dist/img/Andrew-Porter-Logo.png"
-                 loading="lazy"
-                 class="mx-auto max-w-full"
-                 alt="Andrew Porter Logo">
-          </div>
-          <div class="big:basis-auto big:shrink-0 big:grow-0">
-            <img src="./dist/img/Jalen-Rose-Leadership-Academy-Logo.png"
-                 loading="lazy"
-                 class="mx-auto max-w-full"
-                 alt="Jalen Rose Leadership Academy Logo">
-          </div>
-          <div class="big:basis-auto big:shrink-0 big:grow-0">
-            <img src="./dist/img/Wal.png"
-                 loading="lazy"
-                 class="mx-auto max-w-full"
-                 alt="Walbridge logo">
-          </div>
-          <div class="big:basis-auto big:shrink-0 big:grow-0">
-            <img src="./dist/img/Ideal.png"
-                 loading="lazy"
-                 class="mx-auto max-w-full"
-                 alt="Ideal contracting Logo">
-          </div>
-          <div class="big:basis-auto big:shrink-0 big:grow-0">
-            <img src="./dist/img/PhalenLeadership.png"
-                 loading="lazy"
-                 class="mx-auto max-w-full"
-                 alt="Phalen Leadership Academies Logo">
-          </div>
-
-          <div class="big:basis-auto big:shrink-0 big:grow-0">
-            <img src="./dist/img/PhalenLeadership.png"
-                 loading="lazy"
-                 class="mx-auto max-w-full"
-                 alt="Phalen Leadership Academies Logo">
-          </div>
-
+        <div class="big:basis-auto big:shrink-0 big:grow-0">
+          <img src="./dist/img/Andrew-Porter-Logo.png"
+               loading="lazy"
+               class="mx-auto max-w-full"
+               alt="Andrew Porter Logo">
+        </div>
+        <div class="big:hidden">
+          <img src="./dist/img/PhalenLeadership.png"
+               loading="lazy"
+               class="mx-auto max-w-full"
+               alt="Phalen Leadership Academies Logo">
+        </div>
+        <div class="big:basis-auto big:shrink-0 big:grow-0">
+          <img src="./dist/img/Jalen-Rose-Leadership-Academy-Logo.png"
+               loading="lazy"
+               class="mx-auto max-w-full"
+               alt="Jalen Rose Leadership Academy Logo">
+        </div>
+        <div class="big:basis-auto big:shrink-0 big:grow-0">
+          <img src="./dist/img/Wal.png"
+               loading="lazy"
+               class="mx-auto max-w-full"
+               alt="Walbridge logo">
+        </div>
+        <div class="big:basis-auto big:shrink-0 big:grow-0">
+          <img src="./dist/img/Ideal.png"
+               loading="lazy"
+               class="mx-auto max-w-full"
+               alt="Ideal contracting Logo">
+        </div>
+        <div class="big:basis-auto big:shrink-0 big:grow-0">
+          <img src="./dist/img/PhalenLeadership.png"
+               loading="lazy"
+               class="mx-auto max-w-full"
+               alt="Phalen Leadership Academies Logo">
         </div>
 
       </div>
+
     </div>
-  </div>
+  </aside>
 
   <div class="px-4 xl:mb-[322px] mb-20">
 
     <article
-      class="max-w-container mx-auto grid big:grid-cols-2 items-end gap-x-10 big:pb-[150px] pb-15 big:pt-0 pt-15 border-b border-black-200/10">
+      class="max-w-container mx-auto grid big:grid-cols-2 xl:items-end items-center gap-x-10 big:pb-[150px] pb-15 big:pt-0 pt-15 border-b border-black-200/10">
       <header class="max-w-md big:mx-0 mx-auto pb-8.5 big:text-left text-center">
         <p class="text-black/90 text-sm">
           What we do for you
@@ -112,12 +115,13 @@
           with a framework that fosters candid collaboration.
         </p>
         <a href="#"
-           class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base underline big:mt-11.5 mt-5 inline-block">
+           class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base big:mt-11.5 mt-5 inline-block animate-link">
           More know About us
         </a>
       </header>
 
-      <div class="big:max-w-md bg-white big:shadow-huge shadow-lg big:px-10 big:pb-15 big:pt-[244px] w-full ml-auto max-w-quote-card sm:px-7.5 px-4 sm:pt-7.5 pt-4 sm:pb-7.5 pb-4 rounded-lg big:mx-0 mx-auto">
+      <div
+        class="big:max-w-md bg-white big:shadow-huge shadow-lg big:px-10 xl:pb-15 xl:pt-[244px] w-full max-w-quote-card sm:px-7.5 px-4 sm:pt-7.5 pt-4 sm:pb-7.5 pb-4 rounded-lg xl:ml-auto xl:mr-0 ml-auto mr-auto">
         <blockquote cite="/" class="italic big:text-2xl">
           With More than 10 Years of Knowledge and Expertise we Design and Code Websites and Apps, We Build Brands and
           Help Them Succeed
@@ -143,7 +147,8 @@
     <section class="grid big:gap-y-[200px] sm:gap-y-25 gap-y-10 main-content">
 
       <article class="">
-        <div class="max-w-container mx-auto big:flex big:text-left text-center items-center w-full big:justify-start big:gap-x-[133px] big:mt-[150px] sm:mt-15 mt-10">
+        <div
+          class="max-w-container mx-auto big:flex big:text-left text-center items-center w-full big:justify-start big:gap-x-[133px] big:mt-[150px] sm:mt-15 mt-10">
           <header class="max-w-md big:mx-0 mx-auto">
             <h2 class="font-bold sm:text-4xl text-2xl">
               We Have Some
@@ -173,7 +178,7 @@
             DVDs.
           </p>
           <a href="#"
-             class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base underline sm:mt-11.5 mt-4 inline-block">
+             class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base sm:mt-11.5 mt-4 inline-block animate-link">
             See Case Study
           </a>
         </div>
@@ -223,7 +228,7 @@
             It is those feelings that drive our love of astronomy and our desire to learn more and more about it.
           </p>
           <a href="#"
-             class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base underline sm:mt-11.5 mt-4 inline-block">
+             class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base sm:mt-11.5 mt-4 inline-block animate-link">
             See Case Study
           </a>
         </div>
@@ -272,7 +277,7 @@
             If there’s at least one fact you didn’t know before, imagine the difference it might make.
           </p>
           <a href="#"
-             class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base underline sm:mt-11.5 mt-4 inline-block">
+             class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base sm:mt-11.5 mt-4 inline-block animate-link">
             See Case Study
           </a>
         </div>
@@ -331,13 +336,14 @@
                     Design Sprint
                   </h3>
                 </header>
-                <p class="text-black-200/60 text-sm transition-all duration-300 group-hover:text-black-200 big:mt-5 mt-4">
+                <p
+                  class="text-black-200/60 text-sm transition-all duration-300 group-hover:text-black-200 big:mt-5 mt-4">
                   A five-day workshop that will help you answer crucial business questions
                 </p>
               </div>
               <footer>
                 <a href="#"
-                   class="big:text-grey-300 text-yellow group-hover:text-yellow font-bold text-base underline big:mt-7.5 mt-4 inline-block">
+                   class="big:text-grey-300 text-yellow group-hover:text-yellow font-bold text-base big:mt-7.5 mt-4 inline-block animate-link">
                   Read More
                 </a>
               </footer>
@@ -357,13 +363,14 @@
                     Session
                   </h3>
                 </header>
-                <p class="text-black-200/60 text-sm transition-all duration-300 group-hover:text-black-200 big:mt-5 mt-4">
+                <p
+                  class="text-black-200/60 text-sm transition-all duration-300 group-hover:text-black-200 big:mt-5 mt-4">
                   A workshop aimed at shaping your business idea, answering questions regarding project planning
                 </p>
               </div>
               <footer>
                 <a href="#"
-                   class="big:text-grey-300 text-yellow group-hover:text-yellow font-bold text-base underline big:mt-7.5 mt-4 inline-block">
+                   class="big:text-grey-300 text-yellow group-hover:text-yellow font-bold text-base big:mt-7.5 mt-4 inline-block animate-link">
                   Read More
                 </a>
               </footer>
@@ -383,13 +390,14 @@
                     Review
                   </h3>
                 </header>
-                <p class="text-black-200/60 text-sm transition-all duration-300 group-hover:text-black-200 big:mt-5 mt-4">
+                <p
+                  class="text-black-200/60 text-sm transition-all duration-300 group-hover:text-black-200 big:mt-5 mt-4">
                   An evaluation which will help you radically improve your product.
                 </p>
               </div>
               <footer>
                 <a href="#"
-                   class="big:text-grey-300 text-yellow group-hover:text-yellow font-bold text-base underline big:mt-7.5 mt-4 inline-block">
+                   class="big:text-grey-300 text-yellow group-hover:text-yellow font-bold text-base big:mt-7.5 mt-4 inline-block animate-link">
                   Read More
                 </a>
               </footer>
@@ -409,14 +417,15 @@
                     Review
                   </h3>
                 </header>
-                <p class="text-black-200/60 text-sm transition-all duration-300 group-hover:text-black-200 big:mt-5 mt-4">
+                <p
+                  class="text-black-200/60 text-sm transition-all duration-300 group-hover:text-black-200 big:mt-5 mt-4">
                   Do you know what one of the key secrets of success
                   is what makes people successful in business
                 </p>
               </div>
               <footer>
                 <a href="#"
-                   class="big:text-grey-300 text-yellow group-hover:text-yellow font-bold text-base underline big:mt-7.5 mt-4 inline-block">
+                   class="big:text-grey-300 text-yellow group-hover:text-yellow font-bold text-base big:mt-7.5 mt-4 inline-block animate-link">
                   Read More
                 </a>
               </footer>
@@ -437,7 +446,7 @@
         amazing together.
       </h4>
       <a href="#"
-         class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base underline block w-fit xl:mx-0 mx-auto xl:inline-block">
+         class="big:text-grey-300 text-yellow hover:text-yellow font-bold text-base block w-fit xl:mx-0 mx-auto xl:inline-block animate-link">
         LET'S GET STARTED
       </a>
     </div>
@@ -453,7 +462,7 @@
           Phone
         </p>
         <a href="tel:+3250312832"
-           class="font-bold text-white hover:text-yellow">
+           class="font-bold text-white hover:text-yellow animate-link">
           +32 50 31 28 32
         </a>
       </div>
@@ -468,109 +477,115 @@
     </div>
 
     <div class="border-t border-b mt-13 py-15 border-green-dirty-light flex flex-wrap gap-5 gap-y-10">
-      <div class="shrink-0 grow-0 basis-[220px] ">
+      <div class="shrink-0 grow-0 basis-[220px]">
         <p class="text-white font-semibold uppercase">
           Services
         </p>
-        <ul class="grid gap-y-2.5 mt-5">
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Strategy Design
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Product Design
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Content Strategy
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Brand Strategy
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Development
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="grid gap-y-2.5 mt-5">
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Strategy Design
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Product Design
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Content Strategy
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Brand Strategy
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Development
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <div class="shrink-0 grow-0 basis-[220px] ">
+      <div class="shrink-0 grow-0 basis-[220px]">
         <p class="text-white font-semibold uppercase">
           Help And Advice
         </p>
-        <ul class="grid gap-y-2.5 mt-5">
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              How it works
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Contact Support
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Privacy Policy
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              FAQ
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="grid gap-y-2.5 mt-5">
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                How it works
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Contact Support
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <div class="shrink-0 grow-0 basis-[220px] ">
+      <div class="shrink-0 grow-0 basis-[220px]">
         <p class="text-white font-semibold uppercase">
           Company
         </p>
-        <ul class="grid gap-y-2.5 mt-5">
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              About
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Blog
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Contact
-            </a>
-          </li>
-          <li class="">
-            <a href="#"
-               class="text-green-light">
-              Jobs
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="grid gap-y-2.5 mt-5">
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                About
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Blog
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Contact
+              </a>
+            </li>
+            <li class="">
+              <a href="#"
+                 class="text-green-light animate-link">
+                Jobs
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <div class="shrink-0 lg:grow grow-0 basis-[220px] ">
+      <div class="shrink-0 lg:grow grow-0 basis-[220px]">
         <div class="w-fit ml-auto">
           <p class="text-white font-semibold uppercase">
             Get in Touch
@@ -583,13 +598,14 @@
             </li>
           </ul>
 
-          <a href="mailto:info.webovio@gmail.com" class="block mt-5.5 text-white font-bold xl:text-2xl text-lg hover:text-yellow">
+          <a href="mailto:info.webovio@gmail.com"
+             class="block mt-5.5 text-white font-bold xl:text-2xl text-lg hover:text-yellow animate-link">
             info.webovio@gmail.com
           </a>
         </div>
       </div>
     </div>
-    
+
     <div class="mt-7 flex items-center sm:justify-between justify-center w-full gap-x-5 gap-y-7.5 flex-wrap">
       <a href="/" class="">
         <img src="./dist/img/Logo.svg"
@@ -598,7 +614,7 @@
              class="md:inline block mx-auto"
              alt="Webovio logo">
       </a>
-      
+
       <p class="text-green-light text-sm">
         &copy; 2023@webovio. All Rights Reserved.
       </p>
