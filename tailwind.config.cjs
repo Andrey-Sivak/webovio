@@ -14,7 +14,13 @@ module.exports = {
 	theme: {
 		extend: {
 			screens: {
-				big: '992px'
+				big: '992px',
+				short: {
+					raw: '(min-height: 590px)'
+				},
+				'short-wide': {
+					raw: '(min-height: 590px) and (min-width: 767px)'
+				},
 			},
 			spacing: () => ({
 				...Array.from({ length: 201 }, (_, index) => index * 0.5)
