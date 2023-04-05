@@ -40,6 +40,8 @@
 
 # ignore node dependency directories
 /node_modules
+
+.npmrc
 package-lock.json
 .eslintcache
 /dist/js/*.txt
