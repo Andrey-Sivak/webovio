@@ -3,8 +3,8 @@
 import { gsap } from 'gsap';
 
 export const CaseCardsAnimations = class {
-	start = window.innerHeight - 150;
-	end = window.innerHeight * 0.1;
+	start = window.screen.height - 150;
+	end = window.screen.height * 0.1;
 
 	constructor(options) {
 		this.defaults = {
