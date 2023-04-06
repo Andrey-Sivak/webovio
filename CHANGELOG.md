@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/Andrey-Sivak/webovio/compare/v1.3.0...v1.4.0) (2023-04-06)
+
+
+### Features
+
+* add images preloader ([41da76a](https://github.com/Andrey-Sivak/webovio/commit/41da76a329b240d1e9acbf9168d7be28c945f5b6))
+* optimize images ([646beea](https://github.com/Andrey-Sivak/webovio/commit/646beeafb3feb049181491f506c8b8f185695e32))
+
 ## [1.3.0](https://github.com/Andrey-Sivak/webovio/compare/v1.2.0...v1.3.0) (2023-04-06)
 
 
