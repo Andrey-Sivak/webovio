@@ -1,8 +1,8 @@
 'use strict';
 
 export const PortfolioAnimations = class {
-	start = window.innerHeight - 50;
-	end = window.innerHeight * 0.3;
+	start = window.screen.height - 50;
+	end = window.screen.height * 0.3;
 
 	constructor(options = {}) {
 		this.defaults = {
