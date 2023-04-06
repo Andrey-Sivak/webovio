@@ -6,7 +6,7 @@ export const Slider = class {
 	wrapClass = 'swiper-wrapper';
 	itemClass = 'swiper-slide';
 	constructor(sliderSelector) {
-		if (webovioCommon.checkWidth() === 'desktop') {
+		if (window.matchMedia('(min-width: 1024px)').matches) {
 			return;
 		}
 
