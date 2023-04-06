@@ -1,6 +1,6 @@
 {
 	"name": "webovio",
-	"version": "1.3.0",
+	"version": "1.4.0",
 	"description": "Portfolio project",
 	"main": "gulpfile.js",
 	"type": "module",
