@@ -2,7 +2,7 @@
 
 export const PortfolioAnimations = class {
 	start = window.screen.height - 50;
-	end = window.screen.height * 0.3;
+	end = window.screen.height * (isMobile ? 0.1 : 0.3);
 
 	constructor(options = {}) {
 		this.defaults = {
@@ -14,7 +14,10 @@ export const PortfolioAnimations = class {
 
 		if (!isMobile) {
 			this.items.forEach(this.animateItem, this);
+			return;
 		}
+
+		this.items.forEach(this.animateItemMob, this);
 	}
 
 	animateItem(item, idx) {
@@ -26,6 +29,25 @@ export const PortfolioAnimations = class {
 			{
 				opacity: 0,
 				x: startX,
+			},
+			{
+				opacity: 1,
+				x: 0,
+				scrollTrigger: {
+					trigger: item,
+					start: `-=${this.start}`,
+					end: `-=${this.end}`,
+					scrub: true,
+				},
+			},
+		);
+	}
+
+	animateItemMob(item) {
+		gsap.fromTo(
+			item.querySelector(this.selectors.elemToAnimate),
+			{
+				opacity: 0,
 			},
 			{
 				opacity: 1,

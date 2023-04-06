@@ -17,20 +17,12 @@ flsFunctions.isWebp();
 
 new Loader();
 
-ScrollSmoother.create({
-	wrapper: '.wrapper',
-	content: '.content',
-	smooth: 1.2,
-	effects: true,
-});
-
-if (isMobile) {
-	[...document.querySelectorAll('[data-speed=".9"]')].forEach((item) => {
-		item.dataset.speed = '.95';
-	});
-
-	[...document.querySelectorAll('[data-speed="1.1"]')].forEach((item) => {
-		item.dataset.speed = '1.05';
+if (!isMobile) {
+	ScrollSmoother.create({
+		wrapper: '.wrapper',
+		content: '.content',
+		smooth: 1.2,
+		effects: true,
 	});
 }
 

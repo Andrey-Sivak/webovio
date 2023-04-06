@@ -13,7 +13,10 @@ export const CaseCardsAnimations = class {
 		};
 		this.selectors = { ...this.defaults, ...options };
 		const cards = [...document.querySelectorAll(this.selectors.card)];
-		cards.forEach(this.animateCard, this);
+
+		if (!isMobile) {
+			cards.forEach(this.animateCard, this);
+		}
 	}
 
 	animateCard(card) {
