@@ -81,6 +81,10 @@ module.exports = {
 			gridTemplateColumns: {
 				'90-1': '90px 1fr',
 				'46-1': '46px 1fr',
+			},
+			backgroundImage: {
+				'img-load': 'url(\'../img/img-loader.svg\')',
+				'avatar-default': 'url(\'../img/avatar-default.svg\')',
 			}
 		},
 	},
