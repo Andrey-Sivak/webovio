@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Andrey-Sivak/webovio/compare/v1.2.0...v1.3.0) (2023-04-06)
+
+
+### Features
+
+* add gsap animations ([685549c](https://github.com/Andrey-Sivak/webovio/commit/685549c91adc6d4a7de2865989435dee50829bd5))
+* add ScrollSmoother lib ([754f999](https://github.com/Andrey-Sivak/webovio/commit/754f99982c1a59e02180e4985824a328299aba52))
+
 ## 1.2.0 (2023-04-05)
 
 

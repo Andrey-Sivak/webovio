@@ -11,3 +11,8 @@
 .slider > .swiper-wrapper {
   transition-timing-function : linear;
 }
+
+*[data-speed],
+.content {
+  will-change: transform;
+}
