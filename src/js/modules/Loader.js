@@ -6,19 +6,13 @@ export const Loader = class {
 		logo: '.loader-logo',
 		root: '.loader',
 	};
-	constructor(gsap = {}) {
-		if (!Object.keys(gsap).length || !gsap.hasOwnProperty('timeline')) {
-			return;
-		}
-
+	constructor() {
 		this.timelineLoader = gsap.timeline();
-
 		this.init();
 	}
 
 	calculateLogoScale() {
 		const isMobile = window.matchMedia('(max-width: 650px)').matches;
-
 		return isMobile ? 1.3 : 2;
 	}
 
