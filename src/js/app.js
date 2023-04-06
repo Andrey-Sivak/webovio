@@ -5,48 +5,36 @@ import { Slider } from './Slider.js';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import { Loader } from './modules/Loader.js';
+import { PortfolioAnimations } from './modules/PortfolioAnimations.js';
+import { TopArticleAnimations } from './modules/TopArticleAnimations.js';
+import { CaseCardsAnimations } from './modules/CaseCardsAnimations.js';
 
+window.isMobile = window.matchMedia('(max-width: 992px)').matches;
+window.gsap = gsap;
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 flsFunctions.isWebp();
 
-window.webovioCommon = new Common();
+new Loader();
 
-new Loader(gsap);
+ScrollSmoother.create({
+	wrapper: '.wrapper',
+	content: '.content',
+	smooth: 1.2,
+	effects: true,
+});
+
+if (isMobile) {
+	[...document.querySelectorAll('[data-speed=".9"]')].forEach((item) => {
+		item.dataset.speed = '.95';
+	});
+
+	[...document.querySelectorAll('[data-speed="1.1"]')].forEach((item) => {
+		item.dataset.speed = '1.05';
+	});
+}
+
 new Slider('.slider');
-
-gsap.to('.hero-section-top-note', {
-	scrollTrigger: {
-		trigger: '.hero-section',
-		start: 'top top',
-		scrub: true,
-	},
-	yPercent: -500,
-});
-
-gsap.to('.hero-section-heading', {
-	scrollTrigger: {
-		trigger: '.hero-section',
-		start: 'top top',
-		scrub: true,
-	},
-	yPercent: -50,
-});
-
-gsap.to('.hero-section-text', {
-	scrollTrigger: {
-		trigger: '.hero-section',
-		start: 'top top',
-		scrub: true,
-	},
-	yPercent: -200,
-});
-
-gsap.to('.hero-section-link', {
-	scrollTrigger: {
-		trigger: '.hero-section',
-		start: 'top top',
-		scrub: true,
-	},
-	yPercent: -350,
-});
+new PortfolioAnimations();
+new TopArticleAnimations();
+new CaseCardsAnimations();
