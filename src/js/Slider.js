@@ -40,9 +40,7 @@ export const Slider = class {
 			autoplay: {
 				delay: 0,
 			},
-			// slidesPerGroup: 1,
 			slidesPerView: 2,
-			// slidesPerView: 'auto',
 			spaceBetween: 20,
 			breakpoints: {
 				480: {
