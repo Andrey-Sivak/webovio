@@ -49,6 +49,7 @@
 		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-webpack-plugin": "^4.0.0",
+		"fslightbox": "^3.4.1",
 		"git-commit-msg-linter": "^4.9.4",
 		"gulp": "^4.0.2",
 		"gulp-fonter": "^0.3.0",

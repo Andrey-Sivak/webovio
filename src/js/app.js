@@ -8,6 +8,7 @@ import { Loader } from './modules/Loader.js';
 import { PortfolioAnimations } from './modules/PortfolioAnimations.js';
 import { TopArticleAnimations } from './modules/TopArticleAnimations.js';
 import { CaseCardsAnimations } from './modules/CaseCardsAnimations.js';
+import * as fslightbox from 'fslightbox';
 
 window.isMobile = window.matchMedia('(max-width: 992px)').matches;
 window.gsap = gsap;
@@ -21,6 +22,7 @@ gsap.registerPlugin(...gsapPlugins);
 flsFunctions.isWebp();
 
 new Loader();
+refreshFsLightbox();
 
 if (!isMobile) {
 	ScrollSmoother.create({
