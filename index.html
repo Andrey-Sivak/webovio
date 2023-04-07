@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Webovio</title>
+  <title>Webovio - creative agency for redemptive brands</title>
   <link rel="stylesheet" href="./dist/css/style.min.css">
   <script defer src="./dist/js/init.min.js"></script>
 </head>
@@ -207,16 +207,17 @@
       <div class="px-4 xl:mb-[322px] mb-20">
 
         <article
-          class="max-w-container mx-auto grid big:grid-cols-2 xl:items-end items-center gap-x-10 big:pb-[150px] pb-15 big:pt-0 pt-15 border-b border-black-200/10 top-article">
+          class="max-w-container mx-auto grid big:grid-cols-2 xl:items-end items-center gap-x-10 big:pb-[150px] pb-15 big:pt-0 pt-15 border-b border-black-200/10 top-article"
+          itemscope
+          itemtype="https://schema.org/NewsArticle">
           <header class="max-w-md big:mx-0 mx-auto pb-8.5 big:text-left text-center top-article-header">
             <p class="text-black/90 text-sm">
               What we do for you
             </p>
-            <h2 class="font-bold sm:text-4xl text-2xl big:mt-7.5 mt-4">
+            <h2 class="font-bold sm:text-4xl text-2xl big:mt-7.5 mt-4"
+                itemprop="headline">
               Strategy. Design Content.
-              <span class="relative">
-            Technology
-          </span>
+              <span class="relative">Technology</span>
               Development
             </h2>
             <p class="big:mt-8.5 mt-4 text-black-200/60">
@@ -235,14 +236,17 @@
               With More than 10 Years of Knowledge and Expertise we Design and Code Websites and Apps, We Build Brands and
               Help Them Succeed
             </blockquote>
-            <footer>
+            <meta itemprop="datePublished" content="04/06/2023"/>
+            <footer itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <meta itemprop="name" content="Genevieve Rodriquez"/>
               <figure class="grid big:grid-cols-90-1 big:mt-12.5 mt-6 big:gap-x-7.5 items-center grid-cols-46-1 gap-x-3.5">
                 <picture>
                   <source type="image/webp"
                           width="180"
                           height="180"
                           srcset="./dist/img/Genevieve_Rodriquez.webp">
-                  <img src="./dist/img/Genevieve_Rodriquez.png"
+                  <img itemprop="image"
+                       src="./dist/img/Genevieve_Rodriquez.png"
                        width="180"
                        height="180"
                        title="Genevieve Rodriquez"
@@ -250,9 +254,14 @@
                        loading="lazy"
                        alt="Genevieve Rodriquez">
                 </picture>
+                <meta itemprop="jobTitle" content="Founder & CEO"/>
                 <figcaption class="big:text-1.5xl sm:text-base text-sm font-bold">
-                  Genevieve Rodriquez
-                  <cite class="big:mt-1.5 mt-1 big:text-base sm:text-sm text-xs font-normal not-italic block">
+                  <span itemprop="name">Genevieve Rodriquez</span>
+                  <cite class="big:mt-1.5 mt-1 big:text-base sm:text-sm text-xs font-normal not-italic block"
+                        itemprop="worksFor"
+                        itemscope
+                        itemtype="https://schema.org/Organization">
+                    <meta itemprop="name" content="Webovio"/>
                     Founder & CEO, Webovio
                   </cite>
                 </figcaption>
@@ -281,10 +290,13 @@
             </div>
           </article>
 
-          <article class="max-w-container mx-auto w-full grid big:grid-cols-2 items-center gap-x-15 relative z-30 article">
+          <article class="max-w-container mx-auto w-full grid big:grid-cols-2 items-center gap-x-15 relative z-30 article"
+                   itemscope
+                   itemtype="https://schema.org/BlogPosting">
             <div class="max-w-md article-content big:text-left text-center big:mx-0 mx-auto big:mb-0 big:mb-10 mb-5"
                  data-speed=".9">
-              <h2 class="font-bold sm:text-4xl text-2xl">
+              <h2 class="font-bold sm:text-4xl text-2xl"
+                  itemprop="headline">
                 The wall new
                 <br>
                 Balenciaga.com
@@ -302,7 +314,10 @@
             </div>
 
             <div class="article-perform w-full big:max-w-none max-w-md big:mx-0 mx-auto">
-              <figure class="relative">
+              <figure class="relative"
+                      itemprop="image"
+                      itemscope
+                      itemtype="https://schema.org/ImageObject">
                 <a href="./dist/img/Balenciaga-desktop.png" data-fslightbox>
                   <picture>
                     <source media="(min-width: 1920px)"
@@ -332,15 +347,19 @@
                             height="550"
                             sizes="100vw"
                             srcset="./dist/img/Balenciaga.webp 1024w">
-                    <img src="./dist/img/Balenciaga.png"
+                    <img itemprop="url"
+                         src="./dist/img/Balenciaga.png"
                          loading="lazy"
                          class="relative z-10 bg-img-load bg-grey-200 bg-center bg-no-repeat"
                          width="735"
                          height="550"
                          title="The wall new Balenciaga.com"
                          alt="The wall new Balenciaga.com">
+                    <meta itemprop="width" content="735"/>
+                    <meta itemprop="height" content="550"/>
                   </picture>
                 </a>
+                <meta itemprop="datePublished" content="04/06/2023"/>
                 <figcaption
                   class="bg-white big:shadow-huge shadow-lg quote-card max-w-quote-card w-full sm:p-7.5 p-4 rounded-lg big:absolute z-20 big:-bottom-8 big:mx-0 mx-auto big:mt-0 sm:mt-10 mt-4"
                   data-speed="1.1">
@@ -348,13 +367,18 @@
                     “In my history of working with trade show vendors, I can honestly say that there is not one company that
                     I've ever worked with that has better service than Exhibit Systems.”
                   </blockquote>
-                  <figure class="grid grid-cols-46-1 mt-6 gap-x-3.5 items-center">
+                  <figure class="grid grid-cols-46-1 mt-6 gap-x-3.5 items-center"
+                          itemprop="author"
+                          itemscope
+                          itemtype="https://schema.org/Person">
+                    <meta itemprop="name" content="Angel Armstrong"/>
                     <picture>
                       <source type="image/webp"
                               width="92"
                               height="92"
                               srcset="./dist/img/Angel_Armstrong.webp">
-                      <img src="./dist/img/Angel_Armstrong.png"
+                      <img itemprop="image"
+                           src="./dist/img/Angel_Armstrong.png"
                            width="92"
                            height="92"
                            title="Angel Armstrong"
@@ -363,8 +387,13 @@
                            alt="Angel Armstrong">
                     </picture>
                     <figcaption class="text-base font-bold">
-                      Angel Armstrong
-                      <cite class="mt-1 text-sm font-normal not-italic block">
+                      <span itemprop="name">Angel Armstrong</span>
+                      <meta itemprop="jobTitle" content="Founder & CEO"/>
+                      <cite class="mt-1 text-sm font-normal not-italic block"
+                            itemprop="worksFor"
+                            itemscope
+                            itemtype="https://schema.org/Organization">
+                        <meta itemprop="name" content="Google"/>
                         Founder & CEO, Google
                       </cite>
                     </figcaption>
@@ -374,10 +403,13 @@
             </div>
           </article>
 
-          <article class="max-w-container mx-auto w-full grid big:grid-cols-2 items-center gap-x-15 relative z-10 article">
+          <article class="max-w-container mx-auto w-full grid big:grid-cols-2 items-center gap-x-15 relative z-10 article"
+                   itemscope
+                   itemtype="https://schema.org/BlogPosting">
             <div class="max-w-md article-content big:text-left text-center big:mx-0 mx-auto big:mb-0 big:mb-10 mb-5"
                  data-speed=".9">
-              <h2 class="font-bold sm:text-4xl text-2xl">
+              <h2 class="font-bold sm:text-4xl text-2xl"
+                  itemprop="headline">
                 Is this the future of
                 <br>
                 3D model?
@@ -395,7 +427,10 @@
             </div>
 
             <div class="article-perform w-full big:max-w-none max-w-md big:mx-0 mx-auto">
-              <figure class="relative">
+              <figure class="relative"
+                      itemprop="image"
+                      itemscope
+                      itemtype="https://schema.org/ImageObject">
                 <a href="./dist/img/3D_model-desktop.png" data-fslightbox>
                   <picture>
                     <source media="(min-width: 1920px)"
@@ -425,15 +460,19 @@
                             height="550"
                             sizes="100vw"
                             srcset="./dist/img/3D_model.webp 1024w">
-                    <img src="./dist/img/3D_model.png"
+                    <img itemprop="url"
+                         src="./dist/img/3D_model.png"
                          loading="lazy"
                          class="relative z-10 bg-img-load bg-grey-200 bg-center bg-no-repeat"
                          width="735"
                          height="550"
                          title="Is this the future of 3D model?"
                          alt="Is this the future of 3D model?">
+                    <meta itemprop="width" content="735"/>
+                    <meta itemprop="height" content="550"/>
                   </picture>
                 </a>
+                <meta itemprop="datePublished" content="04/06/2023"/>
                 <figcaption
                   class="bg-white big:shadow-huge shadow-lg quote-card max-w-quote-card w-full sm:p-7.5 p-4 rounded-lg big:absolute z-20 big:-bottom-8 big:mx-0 mx-auto big:mt-0 sm:mt-10 mt-4"
                   data-speed="1.1">
@@ -441,13 +480,18 @@
                     “I know they are going to be honest with me. I am not going to get a subpar product; I know it is going
                     to be good. That is the number one advantage of working with Exhibit Systems.”
                   </blockquote>
-                  <figure class="grid grid-cols-46-1 mt-6 gap-x-3.5 items-center">
+                  <figure class="grid grid-cols-46-1 mt-6 gap-x-3.5 items-center"
+                          itemprop="author"
+                          itemscope
+                          itemtype="https://schema.org/Person">
+                    <meta itemprop="name" content="Lina Hart"/>
                     <picture>
                       <source type="image/webp"
                               width="92"
                               height="92"
                               srcset="./dist/img/Lina_Hart.webp">
-                      <img src="./dist/img/Lina_Hart.png"
+                      <img itemprop="image"
+                           src="./dist/img/Lina_Hart.png"
                            width="92"
                            height="92"
                            title="Lina Hart"
@@ -457,7 +501,12 @@
                     </picture>
                     <figcaption class="text-base font-bold">
                       Lina Hart
-                      <cite class="mt-1 text-sm font-normal not-italic block">
+                      <meta itemprop="jobTitle" content="Founder & CEO"/>
+                      <cite class="mt-1 text-sm font-normal not-italic block"
+                            itemprop="worksFor"
+                            itemscope
+                            itemtype="https://schema.org/Organization">
+                        <meta itemprop="name" content="Jico"/>
                         Founder & CEO, Jico
                       </cite>
                     </figcaption>
@@ -467,10 +516,13 @@
             </div>
           </article>
 
-          <article class="max-w-container mx-auto w-full grid big:grid-cols-2 items-center gap-x-15 relative z-20 article">
+          <article class="max-w-container mx-auto w-full grid big:grid-cols-2 items-center gap-x-15 relative z-20 article"
+                   itemscope
+                   itemtype="http://schema.org/BlogPosting">
             <div class="max-w-md article-content big:text-left text-center big:mx-0 mx-auto big:mb-0 big:mb-10 mb-5"
                  data-speed=".9">
-              <h2 class="font-bold sm:text-4xl text-2xl">
+              <h2 class="font-bold sm:text-4xl text-2xl"
+                  itemprop="headline">
                 Is this the future of
                 <br>
                 Online Booking
@@ -487,7 +539,10 @@
             </div>
 
             <div class="article-perform w-full big:max-w-none max-w-md big:mx-0 mx-auto">
-              <figure class="relative">
+              <figure class="relative"
+                      itemprop="image"
+                      itemscope
+                      itemtype="https://schema.org/ImageObject">
                 <a href="./dist/img/Online_Booking-desktop.png" data-fslightbox>
                   <picture>
                     <source media="(min-width: 1920px)"
@@ -517,15 +572,19 @@
                             height="550"
                             sizes="100vw"
                             srcset="./dist/img/Online_Booking.webp 1024w">
-                    <img src="./dist/img/Online_Booking.png"
+                    <img itemprop="url"
+                         src="./dist/img/Online_Booking.png"
                          loading="lazy"
                          class="relative z-10 bg-img-load bg-grey-200 bg-center bg-no-repeat"
                          width="735"
                          height="550"
                          title="Is this the future of Online Booking"
                          alt="Is this the future of Online Booking">
+                    <meta itemprop="width" content="735"/>
+                    <meta itemprop="height" content="550"/>
                   </picture>
                 </a>
+                <meta itemprop="datePublished" content="04/06/2023"/>
                 <figcaption
                   class="bg-white big:shadow-huge shadow-lg quote-card max-w-quote-card w-full sm:p-7.5 p-4 rounded-lg big:absolute z-20 big:-bottom-8 big:mx-0 mx-auto big:mt-0 sm:mt-10 mt-4"
                   data-speed="1.1">
@@ -533,13 +592,18 @@
                     “Exhibit Systems is not a provider. They are not a supplier. They are a partner with expertise in making
                     trade shows effective.”
                   </blockquote>
-                  <figure class="grid grid-cols-46-1 mt-6 gap-x-3.5 items-center">
+                  <figure class="grid grid-cols-46-1 mt-6 gap-x-3.5 items-center"
+                          itemprop="author"
+                          itemscope
+                          itemtype="https://schema.org/Person">
+                    <meta itemprop="name" content="Eunice Oliver"/>
                     <picture>
                       <source type="image/webp"
                               width="92"
                               height="92"
                               srcset="./dist/img/Eunice_Oliver.webp">
-                      <img src="./dist/img/Eunice_Oliver.png"
+                      <img itemprop="image"
+                           src="./dist/img/Eunice_Oliver.png"
                            width="92"
                            height="92"
                            title="Eunice Oliver"
@@ -548,8 +612,13 @@
                            alt="Eunice Oliver">
                     </picture>
                     <figcaption class="text-base font-bold">
+                      <meta itemprop="jobTitle" content="Founder & CEO"/>
                       Eunice Oliver
-                      <cite class="mt-1 text-sm font-normal not-italic block">
+                      <cite class="mt-1 text-sm font-normal not-italic block"
+                            itemprop="worksFor"
+                            itemscope
+                            itemtype="https://schema.org/Organization">
+                        <meta itemprop="name" content="Zeem"/>
                         Founder & CEO, Zeem
                       </cite>
                     </figcaption>
