@@ -71,41 +71,46 @@
 
     <main class="relative z-10 xl:pb-[120px]">
       <section class="w-full h-screen min-h-[450px] relative z-10">
-        <picture>
-          <source media="(min-width: 1920px)"
-                  type="image/webp"
-                  sizes="(min-width: 1920px) 100vw"
-                  width="4323"
-                  height="2443"
-                  srcset="./dist/img/first-section-bg-fullhd2x.webp 1920w, ./dist/img/first-section-bg-fullhd.webp 960w">
-          <source media="(min-width: 1024px)"
-                  type="image/webp"
-                  width="2882"
-                  height="1622"
-                  sizes="(min-width: 1024px) 100vw"
-                  srcset="./dist/img/first-section-bg-desktop2x.webp 1440w, ./dist/img/first-section-bg-desktop.webp 720w">
-          <source media="(min-width: 1920px)"
-                  sizes="(min-width: 1920px) 100vw"
-                  width="4323"
-                  height="2443"
-                  srcset="./dist/img/first-section-bg-fullhd2x.png 1920w, ./dist/img/first-section-bg-fullhd.png 960w">
-          <source media="(min-width: 1024px)"
-                  sizes="(min-width: 1024px) 100vw"
-                  width="2882"
-                  height="1622"
-                  srcset="./dist/img/first-section-bg-desktop2x.png 1440w, ./dist/img/first-section-bg-desktop.png 720w">
-          <source type="image/webp"
-                  width="1441"
-                  height="811"
-                  sizes="100vw"
-                  srcset="./dist/img/first-section-bg.webp 1024w">
-          <img src="./dist/img/first-section-bg.png"
-               class="absolute z-10 w-full h-full object-center object-cover bg-grey-200 bg-img-load bg-no-repeat bg-center"
-               width="1441"
-               height="811"
-               loading="lazy"
-               alt="Hero image of Webovio presentation">
-        </picture>
+        <figure itemscope itemtype="https://schema.org/ImageObject">
+          <picture>
+            <source media="(min-width: 1920px)"
+                    type="image/webp"
+                    sizes="(min-width: 1920px) 100vw"
+                    width="4323"
+                    height="2443"
+                    srcset="./dist/img/first-section-bg-fullhd2x.webp 1920w, ./dist/img/first-section-bg-fullhd.webp 960w">
+            <source media="(min-width: 1024px)"
+                    type="image/webp"
+                    width="2882"
+                    height="1622"
+                    sizes="(min-width: 1024px) 100vw"
+                    srcset="./dist/img/first-section-bg-desktop2x.webp 1440w, ./dist/img/first-section-bg-desktop.webp 720w">
+            <source media="(min-width: 1920px)"
+                    sizes="(min-width: 1920px) 100vw"
+                    width="4323"
+                    height="2443"
+                    srcset="./dist/img/first-section-bg-fullhd2x.png 1920w, ./dist/img/first-section-bg-fullhd.png 960w">
+            <source media="(min-width: 1024px)"
+                    sizes="(min-width: 1024px) 100vw"
+                    width="2882"
+                    height="1622"
+                    srcset="./dist/img/first-section-bg-desktop2x.png 1440w, ./dist/img/first-section-bg-desktop.png 720w">
+            <source type="image/webp"
+                    width="1441"
+                    height="811"
+                    sizes="100vw"
+                    itemprop="url"
+                    srcset="./dist/img/first-section-bg.webp 1024w">
+            <img itemprop="contentUrl"
+                 src="./dist/img/first-section-bg.png"
+                 class="absolute z-10 w-full h-full object-center object-cover bg-grey-200 bg-img-load bg-no-repeat bg-center"
+                 width="1441"
+                 height="811"
+                 loading="lazy"
+                 alt="Hero image of Webovio presentation">
+          </picture>
+          <meta itemprop="datePublished" content="04/06/2023">
+        </figure>
         <div class="absolute inset-0 z-20 bg-black/20"></div>
         <div class="px-4 pt-15 relative z-30 flex flex-col short:justify-center justify-end short:pb-0 pb-5 h-full">
           <div class="max-w-container mx-auto w-full">
