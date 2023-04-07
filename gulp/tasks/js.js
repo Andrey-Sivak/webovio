@@ -21,6 +21,7 @@ export const js = () => {
 				},
 				entry: {
 					app: `${app.path.src.js}/app.js`,
+					init: `${app.path.src.js}/init.js`,
 				},
 				optimization: {
 					minimize: true,

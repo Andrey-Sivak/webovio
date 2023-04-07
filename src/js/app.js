@@ -11,7 +11,12 @@ import { CaseCardsAnimations } from './modules/CaseCardsAnimations.js';
 
 window.isMobile = window.matchMedia('(max-width: 992px)').matches;
 window.gsap = gsap;
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+const gsapPlugins = [ScrollTrigger];
+if (!isMobile) {
+	gsapPlugins.push(ScrollSmoother);
+}
+gsap.registerPlugin(...gsapPlugins);
 
 flsFunctions.isWebp();
 
