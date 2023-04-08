@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/Andrey-Sivak/webovio/compare/v1.5.0...v1.6.0) (2023-04-08)
+
+
+### Features
+
+* add project presentation ([150a2ed](https://github.com/Andrey-Sivak/webovio/commit/150a2ed3fcbfae02278ab4666cd68b1afa7161c2))
+
 ## [1.5.0](https://github.com/Andrey-Sivak/webovio/compare/v1.4.0...v1.5.0) (2023-04-08)
 
 
