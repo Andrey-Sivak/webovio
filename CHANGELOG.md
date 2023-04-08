@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/Andrey-Sivak/webovio/compare/v1.5.0...v1.6.0) (2023-04-08)
+
+
+### Features
+
+* add project presentation ([150a2ed](https://github.com/Andrey-Sivak/webovio/commit/150a2ed3fcbfae02278ab4666cd68b1afa7161c2))
+
+## [1.5.0](https://github.com/Andrey-Sivak/webovio/compare/v1.4.0...v1.5.0) (2023-04-08)
+
+
+### Features
+
+* add advanced meta tags ([a29a07d](https://github.com/Andrey-Sivak/webovio/commit/a29a07d4fb6a55d2284a2915ee64aaa45a4a820a))
+* add dark mode ([72af798](https://github.com/Andrey-Sivak/webovio/commit/72af798e8099e706e1594c5de4328a640feeca46))
+* add favicon ([a47b93a](https://github.com/Andrey-Sivak/webovio/commit/a47b93afd0d99fc9b2abe5034b5191e18b1a7043))
+* add lightbox ([e5f962b](https://github.com/Andrey-Sivak/webovio/commit/e5f962b1551edf2dc6a8784de0c2de375c7d9bd8))
+* add optional scripts loading ([1b52227](https://github.com/Andrey-Sivak/webovio/commit/1b5222755e6cf663277b8e5e164898f37e84cea6))
+* add schema.org microdata ([5a35c68](https://github.com/Andrey-Sivak/webovio/commit/5a35c68947d704e719ee466a6df938f0e28488fd))
+
 ## [1.4.0](https://github.com/Andrey-Sivak/webovio/compare/v1.3.0...v1.4.0) (2023-04-06)
 
 
