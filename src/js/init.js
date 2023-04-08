@@ -1,5 +1,9 @@
 'use strict';
 
+import { ThemeMode } from './modules/ThemeMode.js';
+
+new ThemeMode();
+
 if (!window.matchMedia('(max-width: 992px)').matches) {
 	appendScriptToBody('./dist/js/libs/ScrollSmoother.min.js');
 }
