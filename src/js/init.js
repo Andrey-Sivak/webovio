@@ -1,14 +1,20 @@
 'use strict';
 
+import { ThemeMode } from './modules/ThemeMode.js';
+
+new ThemeMode();
+
 if (!window.matchMedia('(max-width: 992px)').matches) {
-	// load ScrollSmoother.min.js
-	const ssScript = document.createElement('script');
-	ssScript.src = './dist/js/libs/ScrollSmoother.min.js';
-	ssScript.async = false;
-	document.head.appendChild(ssScript);
+	appendScriptToBody('./dist/js/libs/ScrollSmoother.min.js');
 }
-// load app.min.js
-const appScript = document.createElement('script');
-appScript.src = './dist/js/app.min.js';
-appScript.async = false;
-document.head.appendChild(appScript);
+appendScriptToBody('./dist/js/app.min.js');
+
+function appendScriptToBody(src = '') {
+	if (!src.trim()) {
+		return;
+	}
+	const script = document.createElement('script');
+	script.src = src;
+	script.async = false;
+	document.body.appendChild(script);
+}

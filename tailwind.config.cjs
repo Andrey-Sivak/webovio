@@ -2,6 +2,7 @@ const baseFontSize = 16;
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	darkMode: 'class',
 	future: {
 		hoverOnlyWhenSupported: true,
 	},
@@ -56,8 +57,11 @@ module.exports = {
 				'6xl': ['60px', '74px']
 			},
 			boxShadow: {
+				'lg-light':	'0 10px 15px -3px rgba(255, 255, 255, 0.2), 0 4px 6px -4px rgba(255, 255, 255, 0.2)',
 				medium: '20px 25px 43px rgba(0, 0, 0, 0.18)',
-				huge: '50px 50px 100px rgba(0, 0, 0, 0.145947)'
+				'medium-light': '20px 25px 43px rgba(255, 255, 255, 0.18)',
+				huge: '50px 50px 100px rgba(0, 0, 0, 0.15)',
+				'huge-light': '50px 50px 100px rgba(255, 255, 255, 0.25)'
 			},
 			colors: {
 				green: {

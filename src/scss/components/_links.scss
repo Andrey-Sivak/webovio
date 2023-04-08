@@ -15,7 +15,8 @@
     before:max-w-0
     hover:before:max-w-full
     active:before:max-w-full
-    group-hover:before:max-w-full;
+    group-hover:before:max-w-full
+    group-hover:before:bg-yellow;
 
     &.text-green-light {
       @apply before:bg-green-light;
@@ -24,15 +25,13 @@
     &.big\:text-grey-300 {
       @apply before:bg-grey-300
       hover:before:bg-yellow
-      active:before:bg-yellow
-      group-hover:before:bg-yellow;
+      active:before:bg-yellow;
     }
 
     &.text-white {
       @apply before:bg-white
       hover:before:bg-yellow
-      active:before:bg-yellow
-      group-hover:before:bg-yellow;
+      active:before:bg-yellow;
     }
   }
 }
